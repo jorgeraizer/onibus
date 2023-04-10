@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>onibus</title>
+    <style>
+        .principal
+        {
+            position: relative;
+        }
+        .P00
+        {
+            cursor: pointer;
+            position: absolute;
+            background-color: blue;
+            width: 50px;
+            height: 50px;
+            border-radius: 25px;
+            top: 172px;
+            left: 58px;
+        }
+        .P01
+        {
+            cursor: pointer;
+            position: absolute;
+            background-color: blue;
+            width: 50px;
+            height: 50px;
+            border-radius: 25px;
+            top: 172px;
+            left: 150px;
+        }
+        .P02
+        {
+            cursor: pointer;
+            position: absolute;
+            background-color: blue;
+            width: 50px;
+            height: 50px;
+            border-radius: 25px;
+            top: 172px;
+            left: 320px;
+        }
+        .P03
+        {
+            cursor: pointer;
+            position: absolute;
+            background-color: blue;
+            width: 50px;
+            height: 50px;
+            border-radius: 25px;
+            top: 172px;
+            left: 413px;
+        }
+        .P10
+        {
+            cursor: pointer;
+            position: absolute;
+            background-color: blue;
+            width: 50px;
+            height: 50px;
+            border-radius: 25px;
+            top: 261px;
+            left: 58px;
+        }
+        .P11
+        {
+            cursor: pointer;
+            position: absolute;
+            background-color: blue;
+            width: 50px;
+            height: 50px;
+            border-radius: 25px;
+            top: 261px;
+            left: 151px;
+        }
+        .P12
+        {
+            cursor: pointer;
+            position: absolute;
+            background-color: blue;
+            width: 50px;
+            height: 50px;
+            border-radius: 25px;
+            top: 261px;
+            left: 320px;
+        }
+        .P13
+        {
+            cursor: pointer;
+            position: absolute;
+            background-color: blue;
+            width: 50px;
+            height: 50px;
+            border-radius: 25px;
+            top: 261px;
+            left: 413px;
+        }
+        .P20
+        {
+            cursor: pointer;
+            position: absolute;
+            background-color: blue;
+            width: 50px;
+            height: 50px;
+            border-radius: 25px;
+            top: 350px;
+            left: 58px;
+        }
+        .P21
+        {
+            cursor: pointer;
+            position: absolute;
+            background-color: blue;
+            width: 50px;
+            height: 50px;
+            border-radius: 25px;
+            top: 350px;
+            left: 150px;
+        }
+        .P22
+        {
+            cursor: pointer;
+            position: absolute;
+            background-color: blue;
+            width: 50px;
+            height: 50px;
+            border-radius: 25px;
+            top: 350px;
+            left: 320px;
+        }
+        .P23
+        {
+            cursor: pointer;
+            position: absolute;
+            background-color: blue;
+            width: 50px;
+            height: 50px;
+            border-radius: 25px;
+            top: 350px;
+            left: 413px;
+        }
+        .P30
+        {
+            cursor: pointer;
+            position: absolute;
+            background-color: blue;
+            width: 50px;
+            height: 50px;
+            border-radius: 25px;
+            top: 440px;
+            left: 58px;
+        }
+        .P31
+        {
+            cursor: pointer;
+            position: absolute;
+            background-color: blue;
+            width: 50px;
+            height: 50px;
+            border-radius: 25px;
+            top: 440px;
+            left: 150px;
+        }
+        .P32
+        {
+            cursor: pointer;
+            position: absolute;
+            background-color: blue;
+            width: 50px;
+            height: 50px;
+            border-radius: 25px;
+            top: 440px;
+            left: 320px;
+        }
+        .P33
+        {
+            cursor: pointer;
+            position: absolute;
+            background-color: blue;
+            width: 50px;
+            height: 50px;
+            border-radius: 25px;
+            top: 440px;
+            left: 413px;
+        }
+        .P40
+        {
+            cursor: pointer;
+            position: absolute;
+            background-color: blue;
+            width: 50px;
+            height: 50px;
+            border-radius: 25px;
+            top: 530px;
+            left: 58px;
+        }
+        .P41
+        {
+            cursor: pointer;
+            position: absolute;
+            background-color: blue;
+            width: 50px;
+            height: 50px;
+            border-radius: 25px;
+            top: 530px;
+            left: 150px;
+        }
+        .P42
+        {
+            cursor: pointer;
+            position: absolute;
+            background-color: blue;
+            width: 50px;
+            height: 50px;
+            border-radius: 25px;
+            top: 530px;
+            left: 320px;
+        }
+        .P43
+        {
+            cursor: pointer;
+            position: absolute;
+            background-color: blue;
+            width: 50px;
+            height: 50px;
+            border-radius: 25px;
+            top: 530px;
+            left: 413px;
+        }
+        .P50
+        {
+            cursor: pointer;
+            position: absolute;
+            background-color: blue;
+            width: 50px;
+            height: 50px;
+            border-radius: 25px;
+            top: 620px;
+            left: 58px;
+        }
+        .P51
+        {
+            cursor: pointer;
+            position: absolute;
+            background-color: blue;
+            width: 50px;
+            height: 50px;
+            border-radius: 25px;
+            top: 620px;
+            left: 150px;
+        }
+        .P52
+        {
+            cursor: pointer;
+            position: absolute;
+            background-color: blue;
+            width: 50px;
+            height: 50px;
+            border-radius: 25px;
+            top: 620px;
+            left: 320px;
+        }
+        .P53
+        {
+            cursor: pointer;
+            position: absolute;
+            background-color: blue;
+            width: 50px;
+            height: 50px;
+            border-radius: 25px;
+            top: 620px;
+            left: 413px;
+        }
+
+    </style>
+</head>
+<body onload="Limpar();" >
+    
+<div class="principal">
+    <img src="onibus.jpg">
+
+    <div onclick="Preencher('P00');" class="P00" id="P00"></div>    <!--PRIMEIRA FILEIRA-->
+    <div onclick="Preencher('P01');" class="P01" id="P01"></div>
+    <div onclick="Preencher('P02');" class="P02" id="P02"></div>
+    <div onclick="Preencher('P03');" class="P03" id="P03"></div>
+
+    <div onclick="Preencher('P10');" class="P10" id="P10"></div>    <!--SEGUNDA FILEIRA-->
+    <div onclick="Preencher('P11');" class="P11" id="P11"></div>
+    <div onclick="Preencher('P12');" class="P12" id="P12"></div>
+    <div onclick="Preencher('P13');" class="P13" id="P13"></div>
+
+    <div onclick="Preencher('P20');" class="P20" id="P20"></div>    <!--TERCEIRA FILEIRA-->
+    <div onclick="Preencher('P21');" class="P21" id="P21"></div>
+    <div onclick="Preencher('P22');" class="P22" id="P22"></div>
+    <div onclick="Preencher('P23');" class="P23" id="P23"></div>
+
+    <div onclick="Preencher('P30');" class="P30" id="P30"></div>    <!--QUARTA FILEIRA-->
+    <div onclick="Preencher('P31');" class="P31" id="P31"></div>
+    <div onclick="Preencher('P32');" class="P32" id="P32"></div>
+    <div onclick="Preencher('P33');" class="P33" id="P33"></div>
+
+    <div onclick="Preencher('P40');" class="P40" id="P40"></div>    <!--QUINTA FILEIRA-->
+    <div onclick="Preencher('P41');" class="P41" id="P41"></div>
+    <div onclick="Preencher('P42');" class="P42" id="P42"></div>
+    <div onclick="Preencher('P43');" class="P43" id="P43"></div>
+
+    <div onclick="Preencher('P50');" class="P50" id="P50"></div>    <!--SEXTA FILEIRA-->
+    <div onclick="Preencher('P51');" class="P51" id="P51"></div>
+    <div onclick="Preencher('P52');" class="P52" id="P52"></div>
+    <div onclick="Preencher('P53');" class="P53" id="P53"></div>
+</div>
+
+</body>
+<script>
+    function Limpar()
+    {
+        for(linha=0;linha<=5;linha++)
+        {
+            for(coluna=0;coluna<=3;coluna++)
+            {
+                minha_div = "P" + linha + coluna                 
+                document.getElementById(minha_div).style.backgroundColor = "green"
+            }
+        }
+    }
+    function Preencher(qual)
+    {
+       if(document.getElementById(qual).style.backgroundColor != "red")
+       {
+            document.getElementById(qual).style.backgroundColor = "red"
+       }
+       else
+       {
+            document.getElementById(qual).style.backgroundColor = "green"
+       }
+    }
+</script>
+</html>
